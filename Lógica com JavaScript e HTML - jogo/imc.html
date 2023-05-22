@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta charset="UFT-8"
+<html lang="pt-br">
+<script>
+
+    function pulaLinha(){
+
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso){
+
+       return peso / (altura * altura);
+
+    }
+var pesoEdi = 94;
+var altEdi = 1.81;
+
+var pesoJardel = 70;
+var altJardel = 1.92;
+
+var imcJardel = calculaImc(altJardel, pesoJardel);
+var imcEdi = calculaImc(altEdi, pesoEdi);
+
+mostra(imcEdi)
+mostra(imcJardel)
+
+
+
+</script>
+</html>

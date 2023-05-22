@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta charset="UFT-8"
+<html lang="pt-br">
+<script>
+
+    function pulaLinha(){
+
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase)
+        pulaLinha()
+       }
+
+var numeroPensado = Math.round(Math.random());
+
+var tentativas = 1;
+
+while(tentativas <=3){
+    var numeroAdivinhado = parseInt(prompt("Em qual numero estou pensando? Eh um numero entre 0 e 10!"));
+        if (numeroPensado == numeroAdivinhado) {
+            mostra("Parabens, voce acertou! O numero realmente era " + numeroPensado);
+            break
+
+        } else {
+            mostra("Que pena, voce errou! O numero pensado foi: " + numeroPensado);
+        }
+
+        tentativas++;
+
+    }
+
+mostra("FIM");
+
+</script>
+</html>
